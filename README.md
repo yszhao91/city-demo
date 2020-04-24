@@ -22,7 +22,7 @@
 
     本人webgl/threejs开发经验7年左右，一直以来都想着开源，结交更多志同道合的朋友
     希望开源能帮到大家
-    QQ学习交流群：469014839 by: 换孤
+    QQ学习交流群1：469014839 群2:284389784 by: 换孤
     我的github地址：https://github.com/yszhao91 欢迎大家follow star
     https://github.com/yszhao91/xtorcga 是我开源的一个几何算法库
     更多开源后续慢慢展开
