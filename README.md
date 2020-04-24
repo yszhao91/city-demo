@@ -3,7 +3,8 @@
 ## 概述
 
     本项目是一个智慧城市的例子，主要使用技术svg解析，模型加载，辉光(bloom),纹理移动动画
-    ![img](./assets/data/example.png)
+
+![img](assets/example.png)
 
 ## 安装使用
 

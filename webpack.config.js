@@ -3,7 +3,7 @@ const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
-const copyWebpackPlugin = require("copy-webpack-plugin"); 
+const copyWebpackPlugin = require("copy-webpack-plugin");
 
 const path = require("path");
 const resolve = dir => path.resolve(__dirname, dir);
@@ -11,7 +11,7 @@ const resolve = dir => path.resolve(__dirname, dir);
 module.exports = {
   entry: __dirname + "/index.js", //已多次提及的唯一入口文件
   output: {
-    path: __dirname + "/dist",
+    path: __dirname + "/docs",
     filename: "[name].[hash].js"
   },
   // resolve: {
@@ -21,7 +21,7 @@ module.exports = {
   // },
   devtool: "inline-source-map", //'source-map',
   devServer: {
-    contentBase: "./dist", //本地服务器所加载的页面所在的目录
+    contentBase: "./docs", //本地服务器所加载的页面所在的目录
     historyApiFallback: true, //不跳转
     inline: true,
     port: 9010,
@@ -110,11 +110,11 @@ module.exports = {
       //   })
     ]
   },
-  plugins: [ 
+  plugins: [
     new copyWebpackPlugin([
       {
         from: __dirname + "/assets", //打包的静态资源目录地址
-        to: "./assets" //打包到dist下面的public
+        to: "./assets" //打包到docs下面的public
       }
     ]),
     // new TsconfigPathsPlugin({/* options: see below */ }),
